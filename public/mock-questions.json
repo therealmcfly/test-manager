@@ -1,0 +1,182 @@
+[
+	{
+		"q_id":"n001",
+		"difficulty":"d1",
+		"content":"Which of the following numbers is a counting number?",
+		"choices":[
+			"0",
+			"-3",
+			"5",
+			"3.5"
+		],
+		"answer":"5",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n002",
+		"difficulty":"d1",
+		"content":"Which number is NOT a whole number?",
+		"choices":[
+			"0",
+			"7",
+			"12",
+			"-1"
+		],
+		"answer":-1,
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n003",
+		"difficulty":"d1",
+		"content":"Select the counting number from the list below.",
+		"choices":[
+			"0",
+			"10",
+			"-5",
+			"8.2"
+		],
+		"answer":"10",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n004",
+		"difficulty":"d1",
+		"content":"Which of these is a whole number and a counting number?",
+		"choices":[
+			"-4",
+			"0",
+			"2",
+			"1.5"
+		],
+		"answer":"2",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n005",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n006",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n007",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n008",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n009",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	},
+	{
+		"q_id":"n010",
+		"difficulty":"d1",
+		"content":"Which of the following is a whole number?",
+		"choices":[
+			"0",
+			"1",
+			"1.5",
+			"-1"
+		],
+		"answer":"0",
+		"source": {
+			"book_name": "Pre-Algebra",
+			"chapter": "1",
+			"sub_chapter":"1",
+			"content_key":"a01"	
+		}
+	}
+]
