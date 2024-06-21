@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './QuestionForm.module.scss';
+import { QuestionData } from '@/app/common.types';
 
 interface QuestionFormInput{
 	book_name:string;
