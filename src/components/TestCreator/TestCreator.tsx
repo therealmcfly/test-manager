@@ -29,7 +29,7 @@ const TestMakerWrapper = (): JSX.Element => {
 
 	const addToQuestionList = (questionDataToAdd:QuestionData, autoAdd:boolean) => {
 		const updatedQuestionList:QuestionData[] = [...questionList];
-		questionDataToAdd.q_id = `n${(questionList.length + 1)}`
+		questionDataToAdd.q_id = `${(questionList.length + 1)}`
 		updatedQuestionList.push(questionDataToAdd);
 		
 		if(autoAdd) {
