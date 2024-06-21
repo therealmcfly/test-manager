@@ -1,6 +1,6 @@
 import { ChangeEvent, useEffect, useState } from 'react';
+import styles from './TestViewer.module.scss'
 import PreviewQuestionItem from './PreviewQuestionItem/PreviewQuestionItem';
-import styles from './TestPreview.module.scss';
 import { QuestionData, TestData, TestViewerMode } from '@/app/common.types';
 import { fetchTestData, getQuesstionsByQId } from '@/lib/api';
 
