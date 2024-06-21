@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// model User {
+//   userId    String   @id @unique
+//   password  String
+//   email     String
+//   firstName String   @map("first_name")
+//   lastName  String   @map("last_name")
+//   age       Int?
+//   gender    String?
+//   createdAt DateTime @default(now()) @map("created_at")
+//   updateAt  DateTime @updatedAt @map("updated_at")
+//   Teacher   Teacher?
+//   Student   Student?
+// }
+
+model Student {
+  studentId Int      @id @default(autoincrement()) @map("record_id")
+  firstName String
+  // User        User     @relation(fields: [userId], references: [userId])
+  // userId      String
+  createdAt DateTime @default(now()) @map("created_at")
+  updateAt  DateTime @updatedAt @map("updated_at")
+  // ClassJoined Class[]
+}
+
+model Question {
+  q_id       Int      @id @default(autoincrement())
+  difficulty String
+  question   String
+  answer     String
+  choices    String
+  created_at DateTime @default(now())
+  update_at  DateTime @updatedAt
+  // Teacher          Teacher? @relation(fields: [teacherTeacherId], references: [teacherId])
+  // teacherTeacherId Int?
+}
+
+model Test {
+  test_id    Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  update_at  DateTime @updatedAt
+  questions  String
+  // students   Student[]
+  // Teacher          Teacher? @relation(fields: [teacherTeacherId], references: [teacherId])
+  // teacherTeacherId Int?
+}
+
+// model Teacher {
+//   teacherId        Int        @id @default(autoincrement()) @map("record_id")
+//   User             User       @relation(fields: [userId], references: [userId])
+//   userId           String
+//   createdAt        DateTime   @default(now()) @map("created_at")
+//   updateAt         DateTime   @updatedAt @map("updated_at")
+//   testsCreated     Test[]
+//   questionsCreated Question[]
+//   classCreated     Class[]
+//   classManaging    Class[]
+// }
+
+// model Class {
+//   classId          Int       @id @default(autoincrement()) @map("class_id")
+//   createdAt        DateTime  @default(now()) @map("created_at")
+//   updateAt         DateTime  @updatedAt @map("updated_at")
+//   Creator          Teacher?  @relation(fields: [CreatorTeacherId], references: [teacherId])
+//   CreatorTeacherId Int?
+//   Managers         Teacher[]
+//   Students         Student[]
+// }

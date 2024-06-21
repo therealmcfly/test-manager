@@ -1,5 +1,4 @@
-import { getQuestions } from "@/utils/api";
-import { useEffect, useState } from "react";
+import { QuestionData } from "@/app/common.types";
 import QuestionSelItem from "./QuestionSelItem/QuestionSelItem";
 import styles from "./QuestionSelector.module.scss";
 

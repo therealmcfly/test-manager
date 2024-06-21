@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
 import styles from './PreviewQuestionItem.module.scss';
+import { QuestionData } from '@/app/common.types';
 
 interface PreviewQuestionItemProps {
+	index: number;
 	questionData: QuestionData;
-	onRemove:(id:string) => void;
+	answerVisible: boolean;
+	difficultyVisible:boolean;
+	onRemove?:(id:string) => void;
 }
 
-export const PreviewQuestionItem = ({ questionData, onRemove }:PreviewQuestionItemProps):JSX.Element => {
+export const PreviewQuestionItem = ({ index, questionData, answerVisible,difficultyVisible, onRemove }:PreviewQuestionItemProps):JSX.Element => {
 	const [ deleteButtonEnabled, setDeleteButtonEnabled ] = useState<boolean>(false);
 
 	// useEffect(() => {
@@ -20,11 +24,16 @@ export const PreviewQuestionItem = ({ questionData, onRemove }:PreviewQuestionIt
 			onMouseLeave={() => setDeleteButtonEnabled(false)}
 		>
 			<span>
-				<div className={styles.itemTitle}>
-					<span >{`Question ID : ${questionData.q_id}, `}</span>
-					<span>{`Difficulty : ${questionData.difficulty}`}</span>
+				<div className={styles.itemHeading}>
+					{/* <span >{`Question ID : ${questionData.q_id}, `}</span> */}
+					{difficultyVisible && <span >{`Difficulty : ${questionData.difficulty}`}</span>}
 				</div>
-				<div className={styles.itemContent}>{questionData.question}</div>
+				<div className={styles.itemContent}>
+					<a style={{ fontWeight : 600}}>
+						{`Q${Number(index+1)}: ${questionData.question}`}
+					</a>
+					{answerVisible && <a style={{marginLeft:15, color:"blue"}}>{`Answer : ${questionData.answer}`}</a>}
+					</div>
 				<div className={styles.itemAnswer}>
 					{
 						questionData.choices.map((choice, index) => {
@@ -39,7 +48,7 @@ export const PreviewQuestionItem = ({ questionData, onRemove }:PreviewQuestionIt
 				</div>
 			</span>
 			<span>
-				{deleteButtonEnabled && <button onClick={() => onRemove(questionData.q_id)}>
+				{onRemove && deleteButtonEnabled && <button onClick={() => onRemove(questionData.q_id)}>
 					remove
 				</button>}
 			</span>

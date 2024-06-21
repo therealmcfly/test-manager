@@ -3,16 +3,19 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
-.itemTitle {
-	font-size: 1.2rem;
-	font-weight: 600;
+.itemHeading {
+	font-size: 1rem;
 }
 
 .itemContent {
-	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.3rem;
 }
 
 .itemAnswer {	

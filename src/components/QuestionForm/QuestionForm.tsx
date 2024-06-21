@@ -75,12 +75,12 @@ export const QuestionForm = ({onCloseForm, addToQuestionsData }:QuestionFormProp
 			question:formInput.question,
 			choices:formInput.choices,
 			answer:formInput.answer,
-			source:{
-				book_name:formInput.book_name,
-				chapter:formInput.chapter,
-				sub_chapter:formInput.sub_chapter,
-				content_key:formInput.content_key
-			}
+			// source:{
+			// 	book_name:formInput.book_name,
+			// 	chapter:formInput.chapter,
+			// 	sub_chapter:formInput.sub_chapter,
+			// 	content_key:formInput.content_key
+			// }
 		}
 		const buttonName = (e.target as HTMLButtonElement).name;
 		addToQuestionsData(questionDataTosubmit, (buttonName === "save_add" ? true : false));
@@ -107,7 +107,7 @@ export const QuestionForm = ({onCloseForm, addToQuestionsData }:QuestionFormProp
 	return (
 		<div className={styles.questionFormContainer}>
 			<div className={styles.formContainer}>
-				<div>
+				{/* <div>
 					<span>{`Book : `}</span><input onChange={handleInputChange} value={formInput.book_name} name='book_name'></input>
 				</div>
 				<div>
@@ -118,7 +118,7 @@ export const QuestionForm = ({onCloseForm, addToQuestionsData }:QuestionFormProp
 				</div>
 				<div>
 					<span>{`Content ID : `}</span><input onChange={handleInputChange} value={formInput.content_key} name='content_key'></input>
-				</div>
+				</div> */}
 				<div>
 					<span>{`Difficulty : `}</span><input onChange={handleInputChange} value={formInput.difficulty} name='difficulty'></input>
 				</div>

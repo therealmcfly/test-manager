@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Student() {
+export default function DashboardPage() {
 	return (
 		<>
 		<div>
@@ -10,7 +10,7 @@ export default function Student() {
 		<div>
 			<ul>
 				<li>
-					<Link href="/exercises">Exercises</Link>
+					<Link href="/Tests">Tests</Link>
 				</li>
 				<li>
 					<Link href="/student/grades">Grades</Link>

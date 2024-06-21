@@ -1,5 +1,6 @@
 import { MouseEventHandler } from 'react';
 import styles from './QuestionSelItem.module.scss';
+import { QuestionData } from '@/app/common.types';
 
 interface QuestionSelItemProps {
 	questionData: QuestionData;
@@ -16,10 +17,11 @@ export const QuestionsSelector = ({ questionData, onAddClick }:QuestionSelItemPr
 			className={styles.selItem}
 		>
 			<span>
-				<div>
+				{/* <div>
 					{`${questionData.source.book_name} Chapter ${questionData.source.chapter+(questionData.source.sub_chapter ? `.${questionData.source.sub_chapter}` : '')} Content ${questionData.source.content_key}`}
-				</div>
-				<div>{`Question ID : ${questionData.q_id}`}</div>
+				</div> */}
+				{/* <div>{`Question ID : ${questionData.q_id}`}</div> */}
+				<div>{`Q: ${questionData.question} A: ${questionData.answer}`}</div>
 			</span>
 			<span>
 				<button onClick={handleAddClick}>add</button>
